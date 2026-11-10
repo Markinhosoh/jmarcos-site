@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JMarcos RH | Armações em acetato italiano para óticas</title>
+<meta name="description" content="Coleções autorais e marca própria para óticas, em chapa de acetato italiana. Visita no Rio de Janeiro, catálogo para todo o Brasil. Pedido direto pelo WhatsApp.">
+<meta name="theme-color" content="#17352F">
+<!-- DEPLOY STEP: trocar pelas URLs absolutas do site no ar -->
+<meta property="og:title" content="J.Marcos | Coleções que tiram a sua ótica da guerra de preço">
+<meta property="og:description" content="Coleções autorais e marca própria para óticas. Pedido direto pelo WhatsApp.">
+<meta property="og:image" content="assets/r01.jpg">
+<meta property="og:url" content="">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317352F'/%3E%3Cpath d='M8 26c6-4 14-5 20-2l2 1 2-1c6-3 14-2 20 2l2 8c-1 8-6 12-12 12s-10-5-11-11h-2c-1 6-5 11-11 11S9 42 8 34z' fill='none' stroke='%23E7B79C' stroke-width='3.5' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --canvas:#E6E2DC;        /* a mesa de porcelana onde as peças foram fotografadas */
+  --panel:#F0EDE8;
+  --ink:#1B211F;           /* quase preto puxado pro verde do acetato */
+  --petroleo:#17352F;      /* o verde da chapa F1013G */
+  --petroleo-fundo:#10251F;
+  --accent:#C24F1C;        /* o laranja das hastes da F1051, só no pedido e no foco */
+  --accent-hover:#A54216;
+  --accent-muted:#E7B79C;
+  --text-secondary:#545E59;
+  --text-on-dark:#F2EEE8;
+  --text-on-dark-2:#C9D2CD;
+  --display:"Bricolage Grotesque", "Figtree", system-ui, sans-serif;
+  --sans:"Figtree", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, monospace;
+  --gutter:clamp(16px,4vw,56px);
+  --ease-out:cubic-bezier(.22,.8,.24,1);
+  --ease-io:cubic-bezier(.65,0,.35,1);
+  --tshadow:0 1px 2px rgba(6,14,12,.95),0 3px 12px rgba(6,14,12,.78),0 10px 44px rgba(6,14,12,.8);
+}
+*{box-sizing:border-box}
+html,body{overflow-x:hidden}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--canvas);color:var(--ink);font:400 17px/1.62 var(--sans);-webkit-font-smoothing:antialiased;animation:entra .9s var(--ease-out) both}
+@keyframes entra{from{opacity:0}to{opacity:1}}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 var(--gutter)}
+.pular{position:absolute;left:-999px;top:8px;z-index:99;background:var(--ink);color:#fff;padding:10px 14px;border-radius:8px}
+.pular:focus{left:8px}
+.mono{font-family:var(--mono);font-size:13px;letter-spacing:.02em}
+
+/* Ambiente fixo: grão e um brilho que deriva devagar */
+.ambiente{position:fixed;inset:0;z-index:-1;pointer-events:none;background:var(--canvas)}
+.ambiente::before{content:"";position:absolute;inset:-20%;background:radial-gradient(40% 35% at 30% 30%,rgba(23,53,47,.08),transparent 70%),radial-gradient(35% 30% at 75% 70%,rgba(194,79,28,.05),transparent 70%);animation:deriva 80s ease-in-out infinite alternate;animation-delay:-20s}
+.ambiente::after{content:"";position:absolute;inset:0;opacity:.22;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes deriva{to{transform:translate3d(6%,4%,0) rotate(4deg)}}
+
+/* Navegação */
+.topo{position:fixed;inset:0 0 auto 0;z-index:40;transition:background .5s var(--ease-out),color .5s var(--ease-out),box-shadow .5s var(--ease-out);color:var(--text-on-dark)}
+.topo.claro{background:color-mix(in srgb,var(--canvas) 90%,transparent);backdrop-filter:blur(12px);color:var(--ink);box-shadow:0 1px 0 rgba(27,33,31,.12)}
+.topo .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.marca{font:700 22px/1 var(--display);letter-spacing:-.01em;text-decoration:none}
+.marca small{font:500 12px/1 var(--mono);margin-left:8px;opacity:.8}
+.topo nav{margin-left:auto;display:flex;gap:26px}
+.topo nav a{text-decoration:none;font-size:15px;opacity:.82;transition:opacity .3s var(--ease-out)}
+.topo nav a:hover{opacity:1}
+@media (max-width:860px){.topo nav{display:none}.topo .btn{margin-left:auto}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;text-decoration:none;font:600 15px/1 var(--sans);padding:15px 22px;border-radius:999px;background:var(--accent);color:#fff;transition:background .3s var(--ease-out),transform .3s var(--ease-out)}
+.btn:hover{background:var(--accent-hover);transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.fantasma{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
+.btn.fantasma:hover{background:rgba(255,255,255,.1)}
+.btn.peq{padding:11px 15px;font-size:14px}
+@media (pointer:coarse){.btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center}}
+
+/* ===== Abertura: carrossel de pessoas usando as armações ===== */
+.hero{position:relative;height:100vh;height:100svh;min-height:620px;background:var(--petroleo-fundo);color:var(--text-on-dark);overflow:hidden}
+.slides{position:absolute;inset:0}
+.slide{position:absolute;inset:0;margin:0;opacity:0;transition:opacity 1.4s var(--ease-io)}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;object-position:var(--pos,78% 30%);transform:scale(1.07);transition:transform 8s linear}
+.slide.on img{transform:scale(1)}
+.hero .tinta{position:absolute;inset:0;pointer-events:none;background:
+  linear-gradient(90deg,rgba(16,37,31,.95) 0%,rgba(16,37,31,.86) 28%,rgba(16,37,31,.4) 50%,rgba(16,37,31,0) 66%),
+  linear-gradient(0deg,rgba(16,37,31,.7) 0%,rgba(16,37,31,0) 26%),
+  linear-gradient(180deg,rgba(16,37,31,.55) 0%,rgba(16,37,31,0) 18%)}
+.hero-texto{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding-top:68px;padding-bottom:84px}
+.hero-texto>*{max-width:640px}
+.hero .selo{color:var(--accent-muted);margin:0 0 18px}
+.hero h1{font:700 clamp(40px,5.4vw,82px)/.98 var(--display);letter-spacing:-.028em;margin:0;text-shadow:var(--tshadow)}
+.hero h1 em{font-style:normal;color:var(--accent-muted)}
+.hero .sub{font-size:clamp(17px,1.45vw,20px);color:var(--text-on-dark-2);margin:20px 0 0;max-width:50ch;text-shadow:0 1px 8px rgba(6,14,12,.8)}
+.provas{list-style:none;padding:0;margin:24px 0 0;display:flex;flex-wrap:wrap;gap:8px 10px}
+.provas li{font-size:14px;padding:8px 13px;border-radius:999px;background:rgba(242,238,232,.1);border:1px solid rgba(242,238,232,.2);backdrop-filter:blur(8px)}
+.hero .acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-ctrl{position:absolute;z-index:3;left:max(var(--gutter),calc((100vw - 1280px)/2 + var(--gutter)));bottom:28px;display:flex;align-items:center;gap:14px}
+.pontos{display:flex;gap:8px}
+.pontos button{width:34px;height:24px;padding:0;border:0;background:none;cursor:pointer;position:relative}
+.pontos button::before,.pontos button::after{content:"";position:absolute;left:0;right:0;top:50%;height:3px;margin-top:-1.5px;border-radius:2px;background:rgba(242,238,232,.3)}
+.pontos button::after{background:var(--text-on-dark);transform-origin:0 50%;transform:scaleX(0)}
+.pontos button.on::after{animation:enche var(--dur,6s) linear forwards}
+.hero.parado .pontos button.on::after{animation-play-state:paused}
+@keyframes enche{to{transform:scaleX(1)}}
+.pausa{width:36px;height:36px;border-radius:50%;border:1px solid rgba(242,238,232,.4);background:rgba(8,20,17,.4);color:var(--text-on-dark);cursor:pointer;display:grid;place-items:center;font:600 12px/1 var(--sans)}
+.hero .chip{position:absolute;z-index:3;right:var(--gutter);bottom:28px;color:var(--text-on-dark);background:rgba(8,20,17,.55);border:1px solid rgba(201,210,205,.25);border-radius:10px;backdrop-filter:blur(10px);padding:8px 12px;transition:opacity .5s var(--ease-out)}
+.hero .chip.troca{opacity:0}
+@media (max-width:860px){
+  .hero{height:auto;min-height:0;display:flex;flex-direction:column}
+  .slides{position:relative;inset:auto;aspect-ratio:4/5;max-height:64svh;width:100%;margin-top:68px}
+  .slide img{object-position:var(--posm,74% 30%)}
+  .hero .tinta{bottom:auto;top:68px;height:min(125vw,64svh);background:linear-gradient(0deg,var(--petroleo-fundo) 0%,rgba(16,37,31,0) 34%)}
+  .hero-texto{height:auto;padding:8px var(--gutter) 40px;justify-content:flex-start}
+  .hero h1{font-size:clamp(36px,10vw,56px)}
+  .hero-ctrl{left:var(--gutter);bottom:auto;top:calc(68px + min(125vw,64svh) - 46px)}
+  .hero .chip{bottom:auto;top:84px;right:var(--gutter);font-size:11.5px}
+  .topo:not(.claro){background:color-mix(in srgb,var(--petroleo-fundo) 88%,transparent);backdrop-filter:blur(12px)}
+}
+
+/* ===== A chapa ===== */
+.secao{padding:clamp(72px,10vw,140px) 0}
+.secao h2{font:700 clamp(32px,4vw,56px)/1.04 var(--display);letter-spacing:-.02em;margin:0;max-width:18ch}
+.lede{color:var(--text-secondary);max-width:56ch;margin:18px 0 0;font-size:clamp(17px,1.4vw,19px)}
+.chapa{position:relative}
+.chapa .grade2{display:grid;grid-template-columns:5fr 4fr;gap:clamp(28px,5vw,80px);align-items:center}
+.traco{width:100%;height:auto;color:var(--petroleo)}
+.traco path{fill:none;stroke:currentColor;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}
+.traco .t2{stroke:var(--accent);stroke-width:1.6;opacity:.8}
+.faixa{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:44px var(--gutter) 10px;scrollbar-width:thin}
+.faixa figure{margin:0;flex:0 0 clamp(250px,28vw,400px);scroll-snap-align:start}
+.faixa img{width:100%;aspect-ratio:620/300;object-fit:cover;border-radius:8px}
+.faixa figcaption{margin-top:8px;color:var(--text-secondary)}
+@media (max-width:860px){.chapa .grade2{grid-template-columns:1fr}}
+
+
+
+/* ===== Coleções ===== */
+.colecoes{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.6vw,36px);margin-top:48px}
+.colecao{display:flex;flex-direction:column;background:var(--panel);border-radius:14px;overflow:hidden}
+.colecao .foto{position:relative;aspect-ratio:4/3;overflow:hidden}
+.colecao .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 74%;transform:scale(1.25);transform-origin:50% 64%}
+.colecao .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--panel) 0%,rgba(240,237,232,.6) 16%,rgba(240,237,232,0) 42%)}
+.colecao .corpo{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.colecao .tipo{color:var(--accent);margin:0 0 6px}
+.colecao h3{font:700 28px/1.1 var(--display);margin:0 0 10px;letter-spacing:-.01em}
+.colecao p{margin:0 0 20px;color:var(--text-secondary)}
+.colecao .btn{margin-top:auto;align-self:flex-start}
+@media (max-width:900px){.colecoes{grid-template-columns:1fr}}
+
+/* ===== Peças ===== */
+.pecas-cab{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:20px}
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 28px}
+.filtros button{font:500 15px/1 var(--sans);padding:11px 16px;border-radius:999px;border:1.5px solid #9DA39F;background:transparent;color:var(--ink);cursor:pointer;transition:background .3s var(--ease-out),color .3s var(--ease-out)}
+.filtros button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--panel)}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:clamp(18px,2.4vw,32px) clamp(14px,2vw,24px)}
+.peca{display:flex;flex-direction:column}
+.peca[hidden]{display:none}
+.peca .foto{position:relative;border:0;padding:0;background:var(--canvas);cursor:zoom-in;border-radius:10px;overflow:hidden;aspect-ratio:3/2}
+.peca .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 72%;transform:scale(1.22);transform-origin:50% 62%;transition:transform .7s var(--ease-out)}
+.peca .foto:hover img{transform:scale(1.3)}
+.peca .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--canvas) 0%,rgba(230,226,220,.75) 14%,rgba(230,226,220,0) 38%);pointer-events:none}
+.peca .angulos{position:absolute;right:10px;bottom:10px;z-index:1;background:rgba(27,33,31,.7);color:#fff;padding:4px 9px;border-radius:999px;font-size:12px}
+.peca .info{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:14px 0 2px}
+.peca h3{font:500 15px/1.2 var(--mono);margin:0;letter-spacing:.02em}
+.peca .forma{font-size:14px;color:var(--text-secondary)}
+.peca .cor{margin:0 0 12px;font-size:15px;color:var(--text-secondary)}
+.cores{display:flex;gap:8px;margin-bottom:14px}
+.cores button{width:28px;height:28px;border-radius:50%;border:2px solid var(--panel);box-shadow:0 0 0 1.5px #9DA39F;cursor:pointer;padding:0}
+.cores button[aria-pressed="true"]{box-shadow:0 0 0 2px var(--ink)}
+.peca .btn{align-self:flex-start;margin-top:auto}
+
+/* ===== Marca própria ===== */
+.propria{background:var(--panel)}
+.propria .grade2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:start}
+.motivos{list-style:none;margin:0;padding:0;display:grid;gap:26px}
+.motivos li{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:baseline}
+.motivos svg{width:40px;height:40px;color:var(--petroleo)}
+.motivos svg path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.motivos h3{font:600 19px/1.3 var(--sans);margin:0 0 4px}
+.motivos p{margin:0;color:var(--text-secondary)}
+@media (max-width:860px){.propria .grade2{grid-template-columns:1fr}}
+
+/* ===== Como pedir ===== */
+.passos{list-style:none;padding:0;margin:48px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.6vw,36px);counter-reset:p}
+.passos li{counter-increment:p}
+.passos .foto{position:relative;aspect-ratio:3/2;border-radius:10px;overflow:hidden;margin-bottom:18px}
+.passos .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 74%;transform:scale(1.22);transform-origin:50% 62%}
+.passos .foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--canvas) 0%,rgba(230,226,220,0) 36%)}
+.passos h3{font:700 22px/1.2 var(--display);margin:0 0 6px;display:flex;gap:12px;align-items:baseline}
+.passos h3::before{content:counter(p);font:500 14px/1 var(--mono);color:var(--accent)}
+.passos p{margin:0;color:var(--text-secondary)}
+@media (max-width:860px){.passos{grid-template-columns:1fr}}
+
+/* ===== Perguntas ===== */
+.faq{background:var(--petroleo-fundo);color:var(--text-on-dark)}
+.faq h2{color:var(--text-on-dark)}
+.faq .grade2{display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(28px,5vw,80px)}
+.faq details{border-top:1px solid rgba(201,210,205,.28);padding:4px 0}
+.faq details:last-child{border-bottom:1px solid rgba(201,210,205,.28)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;padding:18px 0;font:600 18px/1.35 var(--sans)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 26px/1 var(--mono);color:var(--accent-muted);transition:transform .4s var(--ease-out)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 20px;color:var(--text-on-dark-2);max-width:60ch}
+@media (max-width:860px){.faq .grade2{grid-template-columns:1fr}}
+
+/* ===== Pedido final ===== */
+.pedido .grade2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:start}
+.pedido dl{margin:28px 0 0;display:grid;gap:16px}
+.pedido dt{font-weight:600}
+.pedido dd{margin:2px 0 0;color:var(--text-secondary)}
+form{background:var(--panel);border-radius:16px;padding:clamp(22px,3vw,36px);display:grid;gap:16px}
+label{display:grid;gap:6px;font-weight:500;font-size:15px}
+input,select{font:400 17px/1.3 var(--sans);padding:13px 14px;border-radius:10px;border:1.5px solid #8E9590;background:#fff;color:var(--ink)}
+input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:1px}
+form .btn{justify-self:start;margin-top:6px}
+.sucesso{display:none;margin:0;color:var(--petroleo);font-weight:500}
+form.enviado .sucesso{display:block}
+@media (max-width:860px){.pedido .grade2{grid-template-columns:1fr}}
+
+footer{background:var(--ink);color:#C9CFCB;padding:48px 0 104px;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:18px 48px;justify-content:space-between;align-items:baseline}
+footer .marca{color:#fff}
+
+.flutuante{position:fixed;right:18px;bottom:18px;z-index:45;box-shadow:0 10px 28px rgba(16,37,31,.35);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .5s var(--ease-out),transform .5s var(--ease-out),background .3s}
+.flutuante.on{opacity:1;transform:none;pointer-events:auto}
+@media (max-width:520px){.flutuante .txt{display:none}.flutuante{padding:16px}}
+
+/* Entradas por seção */
+.entra .e{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
+.entra.in .e{opacity:1;transform:none}
+.entra.in .e:nth-child(2){transition-delay:.09s}
+.entra.in .e:nth-child(3){transition-delay:.18s}
+.entra.in.feito .e:nth-child(n){transition-delay:0s}
+
+/* Visualizador */
+dialog{border:0;padding:0;max-width:min(1100px,96vw);width:100%;background:var(--panel);border-radius:12px;color:var(--ink)}
+dialog::backdrop{background:rgba(10,20,17,.8)}
+.vis{display:grid;grid-template-columns:1fr 300px}
+.vis .palco-v img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.vis .lado{padding:24px;display:flex;flex-direction:column;gap:14px}
+.vis h3{font:500 20px/1.2 var(--mono);margin:0}
+.vis .mini{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.vis .mini button{padding:0;border:2px solid transparent;border-radius:6px;overflow:hidden;cursor:pointer;background:none}
+.vis .mini button[aria-current="true"]{border-color:var(--ink)}
+.vis .mini img{aspect-ratio:4/3;object-fit:cover}
+.fechar{position:absolute;top:10px;right:10px;width:44px;height:44px;border-radius:50%;border:0;background:var(--ink);color:#fff;font-size:22px;cursor:pointer;z-index:2}
+@media (max-width:760px){.vis{grid-template-columns:1fr}.vis .lado{padding:18px}}
+
+body.paused *,body.paused *::before,body.paused *::after{animation-play-state:paused!important}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important;transition-delay:0s!important}
+  .entra .e{opacity:1;transform:none}
+  .slide img{transform:none!important}
+  .flutuante{opacity:1;transform:none;pointer-events:auto}
+}
+
+.peca .foto img.st,.passos .foto img.st{object-position:50% 48%;transform:scale(1.3)}
+.peca .foto:hover img.st{transform:scale(1.38)}
+.colecao .foto.st img,.colecao .foto.ft img{transform:none;object-position:50% 50%}
+.colecao .foto.ft img{object-position:50% 25%}
+.colecao .foto.st::after,.colecao .foto.ft::after{display:none}
+.fab{background:var(--panel)}
+.fab-topo{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(28px,5vw,80px);align-items:center}
+.selo{color:var(--accent);margin:0 0 14px;letter-spacing:.06em;text-transform:uppercase;font-size:13px}
+.fab-foto{margin:0;border-radius:14px;overflow:hidden;aspect-ratio:4/3}
+.fab-foto img{width:100%;height:100%;object-fit:cover}
+.etapas{list-style:none;padding:0;margin:56px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.4vw,32px);border-top:1px solid rgba(27,33,31,.15);padding-top:28px}
+.etapas span{color:var(--accent);font-size:14px}
+.etapas h3{font:700 22px/1.2 var(--display);margin:8px 0 6px}
+.etapas p{margin:0;color:var(--text-secondary)}
+.ganhos{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ganhos li{background:var(--canvas);border-radius:12px;padding:16px 18px;color:var(--text-secondary);font-size:15px}
+.ganhos strong{display:block;color:var(--ink);font-weight:600;margin-bottom:2px}
+@media (max-width:960px){.etapas,.ganhos{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.fab-topo{grid-template-columns:1fr}}
+@media (max-width:520px){.etapas,.ganhos{grid-template-columns:1fr}}
+.mural{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.4vw,18px);margin-top:44px}
+.mural figure{margin:0;position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:var(--petroleo-fundo)}
+.mural figure:first-child{grid-column:span 2;grid-row:span 2}
+.mural img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease-out)}
+.mural figure:hover img{transform:scale(1.04)}
+.mural figcaption{position:absolute;left:10px;bottom:10px;background:rgba(16,37,31,.78);color:var(--text-on-dark);padding:5px 10px;border-radius:999px;font-size:12px}
+.nota{margin:18px 0 0;font-size:13px;color:var(--text-secondary)}
+@media (max-width:860px){.mural{grid-template-columns:1fr 1fr}}
+
+.problema{background:var(--petroleo-fundo);color:var(--text-on-dark)}
+.problema .lede{color:var(--text-on-dark-2)}
+.problema .selo{color:var(--accent-muted)}
+.dores{list-style:none;padding:0;margin:52px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.6vw,36px)}
+.dores li{border-top:1px solid rgba(242,238,232,.22);padding-top:22px}
+.dores span{color:var(--accent-muted);font-size:14px}
+.dores h3{font:700 24px/1.2 var(--display);margin:8px 0 8px}
+.dores p{margin:0;color:var(--text-on-dark-2)}
+@media (max-width:860px){.dores{grid-template-columns:1fr}}
+.historia .grade2{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(28px,5vw,80px);align-items:center}
+.hist-foto{margin:0;border-radius:14px;overflow:hidden;aspect-ratio:4/5}
+.hist-foto img{width:100%;height:100%;object-fit:cover;object-position:60% 30%}
+.fatos{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:10px}
+.fatos li{padding-left:22px;position:relative}
+.fatos li::before{content:"";position:absolute;left:0;top:.6em;width:10px;height:2px;background:var(--accent)}
+@media (max-width:860px){.historia .grade2{grid-template-columns:1fr}.hist-foto{aspect-ratio:4/3}}
+.margem{background:var(--panel)}
+.margem .grade2{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,5vw,80px);align-items:center}
+.margem .btn{margin-top:28px}
+.tabela{border-radius:14px;overflow:hidden;background:var(--canvas)}
+.tabela .lin{display:grid;grid-template-columns:1.1fr 1fr 1fr;border-top:1px solid rgba(27,33,31,.1)}
+.tabela .lin span{padding:16px 18px;font-size:15px}
+.tabela .lin span:first-child{font-weight:600}
+.tabela .lin span:nth-child(2){color:var(--text-secondary)}
+.tabela .lin span:nth-child(3){background:rgba(23,53,47,.08);color:var(--petroleo);font-weight:600}
+.tabela .cab{border-top:0}
+.tabela .cab span{font:500 12px/1.3 var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--text-secondary)}
+.tabela .cab span:nth-child(3){background:var(--petroleo);color:var(--text-on-dark)}
+@media (max-width:860px){.margem .grade2{grid-template-columns:1fr}.tabela .lin{grid-template-columns:1fr 1fr 1fr}.tabela .lin span{padding:12px 10px;font-size:14px}.tabela .cab span{font-size:10.5px;letter-spacing:0}}
+
+/* ===== Simulador de margem ===== */
+.conta{background:var(--petroleo);color:var(--text-on-dark)}
+.conta .selo{color:var(--accent-muted)}
+.conta .lede{color:var(--text-on-dark-2)}
+.conta .grade2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:start;margin-top:44px}
+.conta form.campos{display:grid;gap:26px;background:none;padding:0;border-radius:0;color:var(--text-on-dark)}
+.conta .campo label{display:flex;align-items:baseline;font-size:16px;color:var(--text-on-dark);justify-content:space-between;gap:12px;font-weight:600}
+.campo output{font:600 18px/1 var(--mono);color:var(--accent-muted);white-space:nowrap}
+.campo small{display:block;color:var(--text-on-dark-2);font-size:14px;margin-top:4px}
+.campo input[type=range]{width:100%;margin-top:12px;accent-color:var(--accent);height:28px}
+.resultado{background:var(--petroleo-fundo);border-radius:16px;padding:clamp(22px,3vw,36px)}
+.barras{display:grid;gap:14px;margin:8px 0 26px}
+.barra span{display:flex;justify-content:space-between;font-size:14px;color:var(--text-on-dark-2);margin-bottom:6px}
+.barra b{font:600 15px/1 var(--mono);color:var(--text-on-dark)}
+.barra i{display:block;height:14px;border-radius:7px;background:rgba(242,238,232,.28);transform-origin:0 50%;transition:width .5s var(--ease-out)}
+.barra.nova i{background:var(--accent)}
+.grande{font:700 clamp(40px,5vw,68px)/1 var(--display);letter-spacing:-.02em;margin:4px 0 0;color:#fff}
+.rot{font-size:14px;color:var(--text-on-dark-2);margin:0}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px;padding-top:20px;border-top:1px solid rgba(242,238,232,.15)}
+.duo p{margin:0}
+.duo strong{display:block;font:700 26px/1.1 var(--display);color:#fff;margin-top:4px}
+.resultado .btn{margin-top:26px;width:100%}
+.aviso{font-size:13px;color:var(--text-on-dark-2);margin:16px 0 0}
+@media (max-width:860px){.conta .grade2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="ambiente" aria-hidden="true"></div>
+<a class="pular" href="#main">Pular para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a class="marca" href="#">JMarcos<small>RH</small></a>
+    <nav aria-label="Seções">
+      <a href="#historia">Quem sou</a>
+      <a href="#caminhos">Como trabalho</a>
+      <a href="#margem">Margem</a>
+      <a href="#conta">Faça a conta</a>
+      <a href="#rosto">Coleções</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn peq js-wa" data-msg="Olá, J.Marcos! Vim pelo site e quero conversar sobre a minha ótica." href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Fale comigo</a>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- Abertura: carrossel de pessoas usando as armações -->
+  <section class="hero" id="hero" aria-roledescription="carrossel" aria-label="Pessoas usando as armações das coleções">
+    <div class="slides" id="slides" aria-live="off">
+        <figure class="slide on" style="--pos:80% 30%;--posm:76% 30%" data-chip="RHAR-F1013G, verde tartaruga"><img src="assets/hero-m1.jpg" alt="Mulher usando a armação gatinho RHAR-F1013G em acetato verde tartaruga" decoding="async"></figure>
+        <figure class="slide" style="--pos:72% 30%;--posm:68% 30%" data-chip="RHAR-F1013G, vermelho tartaruga"><img src="assets/hero-r02.jpg" alt="Mulher de cabelo cacheado usando a armação RHAR-F1013G vermelho tartaruga" loading="lazy" decoding="async"></figure>
+        <figure class="slide" style="--pos:72% 30%;--posm:66% 30%" data-chip="RHAR-F1026, laranja translúcido"><img src="assets/hero-r05.jpg" alt="Mulher sorrindo com a armação RHAR-F1026 em acetato laranja translúcido" loading="lazy" decoding="async"></figure>
+        <figure class="slide" style="--pos:80% 30%;--posm:80% 30%" data-chip="RHAR-F1051, tartaruga com hastes laranja"><img src="assets/hero-r03.jpg" alt="Mulher de perfil usando a armação RHAR-F1051 tartaruga com hastes laranja" loading="lazy" decoding="async"></figure>
+        <figure class="slide" style="--pos:78% 30%;--posm:78% 30%" data-chip="RHAR-F1061, azul com hastes lilás"><img src="assets/hero-r06.jpg" alt="Homem usando a armação RHAR-F1061 em acetato azul" loading="lazy" decoding="async"></figure>
+        <figure class="slide" style="--pos:80% 30%;--posm:78% 30%" data-chip="RHAR-H2431, nude perolado"><img src="assets/hero-r09.jpg" alt="Mulher sorrindo com a armação RHAR-H2431 nude perolado" loading="lazy" decoding="async"></figure>
+        <figure class="slide" style="--pos:66% 30%;--posm:64% 30%" data-chip="RHAR-H2390, preto com tartaruga"><img src="assets/hero-r07.jpg" alt="Homem de blazer usando a armação RHAR-H2390 preta" loading="lazy" decoding="async"></figure>
+        <figure class="slide" style="--pos:70% 30%;--posm:68% 30%" data-chip="RHAR-F1035, tartaruga mel"><img src="assets/hero-r10.jpg" alt="Homem de cabelo cacheado usando a armação RHAR-F1035 tartaruga mel" loading="lazy" decoding="async"></figure>
+    </div>
+    <div class="tinta" aria-hidden="true"></div>
+    <div class="wrap hero-texto">
+      <p class="selo mono">J.Marcos, representante comercial para óticas</p>
+      <h1>Mais margem e mais faturamento <em>para a sua ótica.</em></h1>
+      <p class="sub">Levo coleções exclusivas, marca própria e curadoria de mix que tiram a sua vitrine da guerra de preço. Peça que o cliente não encontra na loja ao lado é peça que você precifica.</p>
+      <ul class="provas">
+        <li>Preço definido por você</li>
+        <li>Mais lucro em cada armação</li>
+        <li>Mix escolhido para girar</li>
+      </ul>
+      <div class="acoes">
+        <a class="btn js-wa" data-msg="Olá, J.Marcos! Vim pelo site e quero aumentar a margem e o faturamento da minha ótica." href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Quero vender com mais margem</a>
+        <a class="btn fantasma" href="#conta">Fazer a conta da minha ótica</a>
+      </div>
+    </div>
+    <div class="hero-ctrl">
+      <div class="pontos" id="pontos" role="group" aria-label="Escolher foto"></div>
+      <button class="pausa" id="pausa" type="button" aria-label="Pausar as fotos">❚❚</button>
+    </div>
+    <span class="chip mono" id="chip" aria-hidden="true">RHAR-F1013G, verde tartaruga</span>
+  </section>
+
+  <!-- O problema -->
+  <section class="secao problema" id="problema" aria-labelledby="t-prob">
+    <div class="wrap">
+      <div class="entra">
+        <p class="selo mono e">O que eu vejo nas visitas</p>
+        <h2 class="e" id="t-prob">Quando todo mundo vende igual, quem ganha é o desconto.</h2>
+        <p class="lede e">Muita ótica boa trabalha com as mesmas marcas da concorrência. O cliente experimenta na sua loja, pesquisa no celular e acha a mesma armação mais barata em outro lugar.</p>
+      </div>
+      <ul class="dores entra">
+        <li class="e"><span class="mono">01</span><h3>A mesma peça na loja ao lado</h3><p>Se o modelo está em todo lugar, o cliente não tem motivo para escolher você.</p></li>
+        <li class="e"><span class="mono">02</span><h3>Preço comparado no celular</h3><p>Com a referência na mão, a venda vira uma disputa de desconto.</p></li>
+        <li class="e"><span class="mono">03</span><h3>Margem cada vez menor</h3><p>Você vende, mas sobra pouco por peça no fim do mês.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Quem sou -->
+  <section class="secao historia" id="historia" aria-labelledby="t-hist">
+    <div class="wrap grade2">
+      <figure class="hist-foto entra"><img class="e" src="assets/r04.jpg" alt="Cliente sorrindo com a armação RHAR-F1039 em acetato tartaruga branca" loading="lazy"></figure>
+      <div class="entra">
+        <p class="selo mono e">Quem sou</p>
+        <h2 class="e" id="t-hist">Eu não vou à sua ótica para vender caixa de armação.</h2>
+        <p class="lede e">Vou para entender quem entra na sua loja, o que ele procura e quanto ele paga. Com isso, monto junto com você uma vitrine que vende melhor e deixa mais dinheiro em cada peça.</p>
+        <ul class="fatos e">
+          <li>Representante comercial de empresa ótica de São Paulo</li>
+          <li>Atendimento presencial nas óticas do Rio de Janeiro</li>
+          <li>Catálogo e atendimento para todo o Brasil</li>
+          <li>Coleções apresentadas pessoalmente em feiras do setor, como a Expo Visão</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como trabalho -->
+  <section class="secao" id="caminhos" aria-labelledby="t-cam">
+    <div class="wrap">
+      <div class="entra">
+        <p class="selo mono e">Como eu transformo a vitrine</p>
+        <h2 class="e" id="t-cam">Três caminhos, escolhidos para o tamanho da sua ótica.</h2>
+        <p class="lede e">Dá para começar pequeno e crescer. Em todos eles o objetivo é o mesmo: vender peças que o cliente não compara, com mais lucro em cada venda.</p>
+      </div>
+      <div class="colecoes">
+        <article class="colecao">
+          <div class="foto ft"><img src="assets/salvatore.jpg" alt="Modelo usando armação azul da linha Salvatore" loading="lazy"></div>
+          <div class="corpo">
+            <p class="tipo mono">01, curadoria de marcas</p>
+            <h3>RHluxo, Salvatore e RH Kids</h3>
+            <p>Eu seleciono, entre as marcas que represento, os modelos e as cores que combinam com o seu público. Você compra o que tem mais chance de girar.</p>
+          </div>
+        </article>
+        <article class="colecao">
+          <div class="foto st"><img src="assets/s04-m.jpg" alt="Armação quadrada RHAR-F1039 em acetato tartaruga branca" loading="lazy"></div>
+          <div class="corpo">
+            <p class="tipo mono">02, coleção autoral</p>
+            <h3>R.H. Beauty</h3>
+            <p>Coleção com desenho próprio em acetato italiano, nas linhas F e H. Peças que o seu cliente não encontra em qualquer ótica.</p>
+          </div>
+        </article>
+        <article class="colecao">
+          <div class="foto ft"><img src="assets/marca-propria.jpg" alt="Modelo usando armação preta de coleção própria" loading="lazy"></div>
+          <div class="corpo">
+            <p class="tipo mono">03, marca própria</p>
+            <h3>A coleção com o nome da sua ótica</h3>
+            <p>Escolhemos juntos formatos e cores da chapa, e a haste leva a sua marca. É o cliente lembrando da sua loja, e não da marca dos outros.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Margem -->
+  <section class="secao margem" id="margem" aria-labelledby="t-marg">
+    <div class="wrap grade2">
+      <div class="entra">
+        <p class="selo mono e">Margem e faturamento</p>
+        <h2 class="e" id="t-marg">Peça que não dá para comparar é peça que você precifica.</h2>
+        <p class="lede e">Quando a armação é exclusiva da sua loja ou leva o seu nome, o cliente para de comparar referência e passa a comparar o que vê no espelho. O preço volta a ser seu, sobra mais em cada venda e o faturamento cresce sem você precisar vender mais peças.</p>
+        <a class="btn js-wa e" data-msg="Olá, J.Marcos! Quero entender como melhorar a margem da minha ótica com coleções exclusivas." href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Quero conversar sobre isso</a>
+      </div>
+      <div class="tabela entra" role="table" aria-label="Comparação entre vitrine comum e vitrine com coleção exclusiva">
+        <div class="lin cab" role="row"><span role="columnheader"></span><span role="columnheader">Vitrine igual à de todos</span><span role="columnheader">Vitrine com coleção exclusiva</span></div>
+        <div class="lin e" role="row"><span role="rowheader">O cliente compara preço?</span><span role="cell">Sim, no celular</span><span role="cell">Não acha a mesma peça</span></div>
+        <div class="lin e" role="row"><span role="rowheader">Quem define o preço</span><span role="cell">O mercado</span><span role="cell">Você</span></div>
+        <div class="lin e" role="row"><span role="rowheader">O argumento de venda</span><span role="cell">A marca dos outros</span><span role="cell">Acetato italiano e desenho próprio</span></div>
+        <div class="lin e" role="row"><span role="rowheader">O que sobra por peça</span><span role="cell">Pouco, depois do desconto</span><span role="cell">Mais, sem dar desconto</span></div>
+        <div class="lin e" role="row"><span role="rowheader">O cliente volta pelo</span><span role="cell">Desconto</span><span role="cell">Nome da sua ótica</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faça a conta -->
+  <section class="secao conta" id="conta" aria-labelledby="t-conta">
+    <div class="wrap">
+      <div class="entra">
+        <p class="selo mono e">Faça a conta</p>
+        <h2 class="e" id="t-conta">Quanto a mais sobraria na sua ótica?</h2>
+        <p class="lede e">Mexa nos números da sua loja. Você vê na hora quanto o lucro pode crescer quando uma parte das vendas passa a ser de peças exclusivas.</p>
+      </div>
+      <div class="grade2">
+        <form class="campos" id="sim" onsubmit="return false">
+          <div class="campo"><label for="s-qtd">Armações vendidas por mês <output id="o-qtd" for="s-qtd"></output></label><input type="range" id="s-qtd" min="10" max="400" step="5" value="60"></div>
+          <div class="campo"><label for="s-luc">Lucro médio por armação hoje <output id="o-luc" for="s-luc"></output></label><input type="range" id="s-luc" min="30" max="600" step="10" value="120"></div>
+          <div class="campo"><label for="s-pct">Vendas com coleção exclusiva <output id="o-pct" for="s-pct"></output></label><small>Quanto do que você vende passaria a ser R.H. Beauty ou marca própria.</small><input type="range" id="s-pct" min="0" max="100" step="5" value="30"></div>
+          <div class="campo"><label for="s-mais">Lucro a mais em cada peça exclusiva <output id="o-mais" for="s-mais"></output></label><small>A diferença que sobra quando o cliente não tem com o que comparar o preço.</small><input type="range" id="s-mais" min="0" max="300" step="10" value="60"></div>
+        </form>
+        <div class="resultado" aria-live="polite">
+          <div class="barras">
+            <div class="barra"><span>Lucro por mês hoje <b id="r-hoje"></b></span><i id="b-hoje"></i></div>
+            <div class="barra nova"><span>Com coleção exclusiva <b id="r-novo"></b></span><i id="b-novo"></i></div>
+          </div>
+          <p class="rot">A mais por ano</p>
+          <p class="grande" id="r-ano"></p>
+          <div class="duo">
+            <p><span class="rot">A mais por mês</span><strong id="r-mes"></strong></p>
+            <p><span class="rot">Crescimento do lucro</span><strong id="r-pct"></strong></p>
+          </div>
+          <a class="btn js-wa" id="sim-wa" data-msg="Olá, J.Marcos! Fiz a conta no site e quero conversar sobre margem." href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Conversar sobre esses números</a>
+          <p class="aviso">Simulação ilustrativa. O resultado real depende do seu preço, do seu público e do mix que montarmos juntos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A chapa -->
+  <section class="secao chapa" id="chapa" aria-labelledby="t-chapa">
+    <div class="wrap grade2">
+      <div class="entra">
+        <h2 class="e" id="t-chapa">Acetato italiano: o argumento que o seu vendedor coloca na mão do cliente.</h2>
+        <p class="lede e">Profundidade de cor, brilho e veios que mudam de peça para peça. Uma armação que se explica sozinha no balcão e justifica um preço melhor.</p>
+      </div>
+      <svg class="traco" id="traco" viewBox="0 0 600 260" aria-hidden="true">
+        <path class="t1" d="M20 70 C 80 40, 200 38, 262 64 C 278 72, 292 80, 300 92 C 308 80, 322 72, 338 64 C 400 38, 520 40, 580 70 L 560 150 C 548 205, 500 230, 446 230 C 392 230, 352 196, 338 140 C 330 120, 312 112, 300 112 C 288 112, 270 120, 262 140 C 248 196, 208 230, 154 230 C 100 230, 52 205, 40 150 Z"/>
+        <path class="t2" d="M58 92 C 110 72, 200 72, 246 92 L 236 140 C 226 180, 196 204, 156 204 C 112 204, 80 184, 72 146 Z M542 92 C 490 72, 400 72, 354 92 L 364 140 C 374 180, 404 204, 444 204 C 488 204, 520 184, 528 146 Z"/>
+      </svg>
+    </div>
+    <div class="faixa" id="faixa"></div>
+  </section>
+
+  <!-- Fabricação -->
+  <section class="secao fab" id="fabricacao" aria-labelledby="t-fab">
+    <div class="wrap">
+      <div class="fab-topo">
+        <div class="entra">
+          <p class="selo mono e">Chapa de acetato italiana</p>
+          <h2 class="e" id="t-fab">Da chapa italiana até a vitrine da sua ótica.</h2>
+          <p class="lede e">Toda armação nasce de uma chapa de acetato italiana. É esse começo que deixa a cor viva, o brilho fundo e a peça firme no rosto do cliente.</p>
+        </div>
+        <figure class="fab-foto entra"><img class="e" src="assets/s03.jpg" alt="Armação gatinho RHAR-F1051 em acetato tartaruga com hastes laranja, foto de estúdio" loading="lazy"></figure>
+      </div>
+      <ol class="etapas entra">
+        <li class="e"><span class="mono">01</span><h3>A chapa</h3><p>Acetato de celulose em chapa, com a cor formada dentro do material, em camadas. Por isso o tartaruga tem profundidade.</p></li>
+        <li class="e"><span class="mono">02</span><h3>O corte</h3><p>Frente e hastes saem recortadas da chapa, no desenho de cada modelo da coleção.</p></li>
+        <li class="e"><span class="mono">03</span><h3>O acabamento</h3><p>A peça é desbastada e polida até ganhar o brilho que o cliente vê no espelho.</p></li>
+        <li class="e"><span class="mono">04</span><h3>A conferência</h3><p>Cada armação sai com a referência na lente de demonstração e a marcação Italy Design na haste.</p></li>
+      </ol>
+      <ul class="ganhos entra">
+        <li class="e"><strong>A cor não descasca.</strong> Ela faz parte do material, não é pintura.</li>
+        <li class="e"><strong>Ajusta no calor.</strong> Dá para acertar a armação no balcão da ótica.</li>
+        <li class="e"><strong>Leve no rosto.</strong> Confortável para usar o dia todo.</li>
+        <li class="e"><strong>Origem vegetal.</strong> O acetato é feito a partir da celulose.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- No rosto -->
+  <section class="secao rosto" id="rosto" aria-labelledby="t-rosto">
+    <div class="wrap">
+      <div class="entra">
+        <h2 class="e" id="t-rosto">O portfólio, no rosto de quem compra.</h2>
+        <p class="lede e">Algumas peças das coleções que levo às óticas. Do gatinho marcante ao redondo clássico, cada cor conversa com um estilo de cliente.</p>
+      </div>
+      <div class="mural entra">
+        <figure class="e"><img src="assets/r01.jpg" alt="Pessoa usando a armação RHAR-F1013G, verde tartaruga" loading="lazy"><figcaption class="mono">RHAR-F1013G, verde tartaruga</figcaption></figure>
+        <figure class="e"><img src="assets/r02-m.jpg" alt="Pessoa usando a armação RHAR-F1013G, vermelho tartaruga" loading="lazy"><figcaption class="mono">RHAR-F1013G, vermelho tartaruga</figcaption></figure>
+        <figure class="e"><img src="assets/r03-m.jpg" alt="Pessoa usando a armação RHAR-F1051, tartaruga com hastes laranja" loading="lazy"><figcaption class="mono">RHAR-F1051, tartaruga com hastes laranja</figcaption></figure>
+        <figure class="e"><img src="assets/r04-m.jpg" alt="Pessoa usando a armação RHAR-F1039, tartaruga branca" loading="lazy"><figcaption class="mono">RHAR-F1039, tartaruga branca</figcaption></figure>
+        <figure class="e"><img src="assets/r05-m.jpg" alt="Pessoa usando a armação RHAR-F1026, laranja translúcido" loading="lazy"><figcaption class="mono">RHAR-F1026, laranja translúcido</figcaption></figure>
+        <figure class="e"><img src="assets/r06-m.jpg" alt="Pessoa usando a armação RHAR-F1061, azul com hastes lilás" loading="lazy"><figcaption class="mono">RHAR-F1061, azul com hastes lilás</figcaption></figure>
+        <figure class="e"><img src="assets/r07-m.jpg" alt="Pessoa usando a armação RHAR-H2390, preto com tartaruga" loading="lazy"><figcaption class="mono">RHAR-H2390, preto com tartaruga</figcaption></figure>
+        <figure class="e"><img src="assets/r09-m.jpg" alt="Pessoa usando a armação RHAR-H2431, nude perolado" loading="lazy"><figcaption class="mono">RHAR-H2431, nude perolado</figcaption></figure>
+        <figure class="e"><img src="assets/r10-m.jpg" alt="Pessoa usando a armação RHAR-F1035, tartaruga mel" loading="lazy"><figcaption class="mono">RHAR-F1035, tartaruga mel</figcaption></figure>
+      </div>
+      <a class="btn js-wa" style="margin-top:28px" data-msg="Olá, J.Marcos! Quero receber o catálogo completo das coleções." href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Receber o catálogo completo</a>
+      <p class="nota">Fotos de modelo criadas com inteligência artificial a partir das armações reais.</p>
+    </div>
+  </section>
+
+  <!-- Como começa -->
+  <section class="secao" id="como-comeca" aria-labelledby="t-com">
+    <div class="wrap">
+      <h2 id="t-com">Como a gente começa</h2>
+      <ol class="passos entra">
+        <li class="e"><div class="foto"><img class="st" src="assets/s05-m.jpg" alt="" loading="lazy"></div><h3>Uma conversa</h3><p>Você me conta sobre a loja, o público e a faixa de preço que mais vende.</p></li>
+        <li class="e"><div class="foto"><img class="st" src="assets/s06-m.jpg" alt="" loading="lazy"></div><h3>A curadoria</h3><p>No Rio de Janeiro, levo as peças até você. Fora do RJ, mando fotos e vídeos de perto de cada cor.</p></li>
+        <li class="e"><div class="foto"><img class="st" src="assets/s10-m.jpg" alt="" loading="lazy"></div><h3>A vitrine nova</h3><p>O pedido vai direto para o endereço do CNPJ da sua ótica. Depois, olhamos juntos o que saiu para acertar a próxima reposição.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Perguntas -->
+  <section class="secao faq" id="perguntas" aria-labelledby="t-faq">
+    <div class="wrap grade2">
+      <h2 id="t-faq">O que os donos de ótica me perguntam</h2>
+      <div>
+        <details><summary>Minha ótica é pequena. Isso é para mim?</summary><p>É. Dá para começar com uma curadoria de poucas peças e crescer conforme a vitrine responde. A marca própria pode vir depois.</p></details>
+        <details><summary>Meu cliente pede marca conhecida. Coleção exclusiva vende?</summary><p>O cliente compra o que vê no rosto. Uma peça com desenho e cor que ele não acha na ótica do lado vira argumento de venda seu, e não de outra marca.</p></details>
+        <details><summary>Como eu sei que o acetato é italiano?</summary><p>No Rio de Janeiro eu levo as peças até você para ver na mão. Fora do RJ, mando fotos e vídeos de perto de cada cor antes de você fechar o pedido.</p></details>
+        <details><summary>Como funciona a marca própria?</summary><p>Escolhemos juntos os formatos e as cores da chapa, e a coleção sai com o nome da sua ótica. Me chama para conversar sobre quantidades e prazos.</p></details>
+        <details><summary>Já trabalho com outro representante.</summary><p>Sem problema. Peça o catálogo e compare cor, acabamento e condições com o que você já tem na loja.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="secao pedido" id="contato" aria-labelledby="t-ped">
+    <div class="wrap grade2">
+      <div>
+        <h2 id="t-ped">Vamos conversar sobre a sua ótica?</h2>
+        <p class="lede">Preencha e o WhatsApp abre com a mensagem pronta. Eu respondo pessoalmente.</p>
+        <dl>
+          <div><dt>Rio de Janeiro</dt><dd>Visita na sua loja, com as peças na mão.</dd></div>
+          <div><dt>Todo o Brasil</dt><dd>Catálogo e atendimento pelo WhatsApp. O pedido vai direto para o endereço do CNPJ da sua ótica.</dd></div>
+        </dl>
+      </div>
+      <form id="form" novalidate>
+        <label>Seu nome<input name="nome" autocomplete="name" required placeholder="Como posso te chamar"></label>
+        <label>Nome da ótica<input name="otica" required placeholder="Ótica Exemplo"></label>
+        <label>Cidade e estado<input name="cidade" autocomplete="address-level2" placeholder="Niterói, RJ"></label>
+        <label>Sobre o que você quer conversar
+          <select name="interesse">
+            <option>Aumentar a margem e o faturamento da minha ótica</option>
+            <option>Deixar a minha vitrine diferente da concorrência</option>
+            <option>Criar a marca própria da minha ótica</option>
+            <option>Conhecer a coleção R.H. Beauty</option>
+            <option>Conhecer RHluxo, Salvatore e RH Kids</option>
+            <option>Agendar uma visita no Rio de Janeiro</option>
+          </select>
+        </label>
+        <button class="btn" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Enviar pelo WhatsApp</button>
+        <p class="sucesso" role="status">Abri o WhatsApp com a sua mensagem pronta. É só tocar em enviar.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><a class="marca" href="#">JMarcos<small>RH</small></a><br>Representante comercial para óticas</div>
+    <div>R.H. Beauty, RHluxo, Salvatore, RH Kids e marca própria</div>
+    <div>Visita no RJ, catálogo para todo o Brasil</div>
+  </div>
+</footer>
+
+<a class="btn flutuante js-wa" id="flutuante" data-msg="Olá, J.Marcos! Vim pelo site e quero conversar sobre a minha ótica." href="#" aria-label="Falar com o J.Marcos pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><span class="txt">Falar com o J.Marcos</span></a>
+
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></symbol>
+</svg>
+
+<script>
+/* ===== Número do WhatsApp =====
+   Número oficial, só dígitos com 55 + DDD. */
+const WHATSAPP = "5521975534009";
+const wa = msg => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
+document.querySelectorAll(".js-wa").forEach(a => { a.href = wa(a.dataset.msg); a.target = "_blank"; a.rel = "noopener"; });
+
+const IMG = k => `assets/${k}.jpg`;
+const smoothstep = (p, e0, e1) => { const t = Math.min(1, Math.max(0, (p - e0) / (e1 - e0))); return t * t * (3 - 2 * t); };
+const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+
+/* ===== Abertura: carrossel ===== */
+const RM = matchMedia("(prefers-reduced-motion: reduce)");
+const hero = document.getElementById("hero");
+const topo = document.getElementById("topo"), flut = document.getElementById("flutuante");
+const slides = [...document.querySelectorAll(".slide")];
+const pontos = document.getElementById("pontos"), pausa = document.getElementById("pausa"), chip = document.getElementById("chip");
+const DUR = 6000;
+let atual = 0, timer = null, pausadoUser = false, pausadoHover = false, heroVisivel = true;
+hero.style.setProperty("--dur", DUR + "ms");
+slides.forEach((sl, i) => {
+  const b = document.createElement("button");
+  b.type = "button"; b.setAttribute("aria-label", `Foto ${i + 1} de ${slides.length}: ${sl.dataset.chip}`);
+  b.addEventListener("click", () => { vai(i); });
+  pontos.appendChild(b);
+});
+const dots = [...pontos.children];
+function preparar(i) { const im = slides[i % slides.length].querySelector("img"); if (im.loading === "lazy") im.loading = "eager"; }
+function vai(i) {
+  atual = (i + slides.length) % slides.length;
+  slides.forEach((sl, j) => { sl.classList.toggle("on", j === atual); sl.setAttribute("aria-hidden", j === atual ? "false" : "true"); });
+  dots.forEach((d, j) => { d.classList.remove("on"); if (j === atual) { void d.offsetWidth; d.classList.add("on"); d.setAttribute("aria-current", "true"); } else d.removeAttribute("aria-current"); });
+  chip.classList.add("troca");
+  setTimeout(() => { chip.textContent = slides[atual].dataset.chip; chip.classList.remove("troca"); }, 350);
+  preparar(atual + 1);
+  agenda();
+}
+function rodando() { return !pausadoUser && !pausadoHover && heroVisivel && !RM.matches && !document.hidden; }
+function agenda() {
+  clearTimeout(timer); timer = null;
+  hero.classList.toggle("parado", !rodando());
+  if (rodando()) timer = setTimeout(() => vai(atual + 1), DUR);
+}
+pausa.addEventListener("click", () => {
+  pausadoUser = !pausadoUser;
+  pausa.textContent = pausadoUser ? "▶" : "❚❚";
+  pausa.setAttribute("aria-label", pausadoUser ? "Continuar as fotos" : "Pausar as fotos");
+  if (!pausadoUser) vai(atual); else agenda();
+});
+hero.addEventListener("pointerenter", e => { if (e.pointerType === "mouse") { pausadoHover = true; agenda(); } });
+hero.addEventListener("pointerleave", e => { if (e.pointerType === "mouse") { pausadoHover = false; vai(atual); } });
+hero.addEventListener("focusin", () => { pausadoHover = true; agenda(); });
+hero.addEventListener("focusout", e => { if (!hero.contains(e.relatedTarget)) { pausadoHover = false; agenda(); } });
+let tx = null;
+hero.addEventListener("touchstart", e => { tx = e.touches[0].clientX; }, { passive: true });
+hero.addEventListener("touchend", e => { if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; tx = null; if (Math.abs(dx) > 50) vai(atual + (dx < 0 ? 1 : -1)); }, { passive: true });
+new IntersectionObserver(es => { const v = es[0].isIntersecting; if (v !== heroVisivel) { heroVisivel = v; agenda(); } }).observe(hero);
+
+/* Navegação clara depois da abertura e botão flutuante */
+function chrome() {
+  const claro = scrollY > hero.offsetTop + hero.offsetHeight - 80;
+  topo.classList.toggle("claro", claro);
+  flut.classList.toggle("on", claro);
+}
+addEventListener("scroll", chrome, { passive: true });
+
+/* ===== Traço SVG que se desenha no scroll ===== */
+const traco = document.getElementById("traco");
+const tracos = [...traco.querySelectorAll("path")].map(p => { const L = p.getTotalLength(); p.style.strokeDasharray = L; p.style.strokeDashoffset = L; return { p, L, last: -1 }; });
+let tracoPinado = false;
+function desenhaTraco() {
+  if (tracoPinado) return;
+  const r = traco.getBoundingClientRect();
+  const t = clamp((innerHeight - r.top) / (innerHeight * .9), 0, 1);
+  tracos.forEach((o, i) => {
+    const local = clamp((t - i * .25) / .75, 0, 1);
+    const off = Math.round(o.L * (1 - local));
+    if (off !== o.last) { o.p.style.strokeDashoffset = off; o.last = off; }
+  });
+}
+addEventListener("scroll", desenhaTraco, { passive: true });
+
+/* ===== Entradas por seção ===== */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add("in"); setTimeout(() => e.target.classList.add("feito"), 1100); io.unobserve(e.target); }
+}), { threshold: .15 });
+document.querySelectorAll(".entra").forEach(el => io.observe(el));
+
+/* Pausa animações em aba escondida */
+document.addEventListener("visibilitychange", () => { document.body.classList.toggle("paused", document.hidden); agenda(); });
+
+/* ===== Faixa de detalhes ===== */
+const DET = [[82,"RHAR-F1013G, verde tartaruga"],[81,"RHAR-F1013G, vermelho tartaruga"],[34,"RHAR-F1039, tartaruga branca"],[9,"RHAR-F1026, laranja translúcido"],[20,"RHAR-F1058B, tartaruga clara"],[22,"RHAR-F1061, azul"],[19,"RHAR-F1040, vinho degradê"],[85,"RHAR-F1051, tartaruga"],[49,"RHAR-F1029, marrom mesclado"],[1,"RHAR-H2390, preto com tartaruga"]];
+document.getElementById("faixa").innerHTML = DET.map(([n,t]) =>
+  `<figure><img src="${IMG("d" + String(n).padStart(2,"0"))}" alt="Detalhe do acetato da armação ${t}" loading="lazy"><figcaption class="mono">${t}</figcaption></figure>`).join("");
+
+/* Estados finais para movimento reduzido, nas duas direções */
+function pinToFinalStates() {
+  tracoPinado = true; tracos.forEach(o => { o.p.style.strokeDashoffset = 0; o.last = 0; });
+  document.querySelectorAll(".entra").forEach(el => el.classList.add("in", "feito"));
+}
+function unpinFinalStates() {
+  if (!tracoPinado) return;
+  tracoPinado = false; tracos.forEach(o => o.last = -1); desenhaTraco();
+}
+RM.addEventListener("change", e => { if (e.matches) pinToFinalStates(); else unpinFinalStates(); agenda(); });
+
+/* ===== Peças ===== */
+const P = n => "p" + String(n).padStart(2,"0");
+/* ===== Formulário: monta a mensagem e abre o WhatsApp ===== */
+const form = document.getElementById("form");
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const d = new FormData(form);
+  if (!d.get("nome").trim() || !d.get("otica").trim()) { (d.get("nome").trim() ? form.otica : form.nome).focus(); return; }
+  const msg = `Olá, J.Marcos! Sou ${d.get("nome").trim()}, da ${d.get("otica").trim()}${d.get("cidade").trim() ? " (" + d.get("cidade").trim() + ")" : ""}. Quero conversar sobre: ${d.get("interesse").toLowerCase()}.`;
+  window.open(wa(msg), "_blank", "noopener");
+  form.classList.add("enviado");
+});
+
+
+/* ===== Simulador de margem ===== */
+const brl = v => "R$ " + Math.round(v).toLocaleString("pt-BR");
+const $ = id => document.getElementById(id);
+function conta() {
+  const q = +$("s-qtd").value, l = +$("s-luc").value, p = +$("s-pct").value / 100, m = +$("s-mais").value;
+  $("o-qtd").textContent = q; $("o-luc").textContent = brl(l); $("o-pct").textContent = Math.round(p * 100) + "%"; $("o-mais").textContent = "+ " + brl(m);
+  const hoje = q * l, extra = q * p * m, novo = hoje + extra;
+  $("r-hoje").textContent = brl(hoje); $("r-novo").textContent = brl(novo);
+  $("b-hoje").style.width = (novo ? hoje / novo * 100 : 0) + "%"; $("b-novo").style.width = "100%";
+  $("r-mes").textContent = "+ " + brl(extra); $("r-ano").textContent = "+ " + brl(extra * 12);
+  $("r-pct").textContent = "+ " + (hoje ? Math.round(extra / hoje * 100) : 0) + "%";
+  $("sim-wa").href = wa(`Olá, J.Marcos! Fiz a conta no site: vendo cerca de ${q} armações por mês, com lucro médio de ${brl(l)} por peça. Quero entender como chegar a ${brl(extra)} a mais por mês com coleção exclusiva.`);
+}
+document.querySelectorAll("#sim input").forEach(i => i.addEventListener("input", conta));
+conta();
+
+/* Liga tudo */
+if (RM.matches) pinToFinalStates();
+vai(0); chrome(); desenhaTraco();
+</script>
+</body>
+</html>
